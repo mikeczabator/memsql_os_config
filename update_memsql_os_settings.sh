@@ -38,6 +38,6 @@ echo "memsql          soft    nofile          1024000" >> /etc/security/limits.c
 echo "memsql          hard    nofile          1024000"  >> /etc/security/limits.conf
 echo "memsql          soft    nproc           256000"  >> /etc/security/limits.conf
 echo "memsql          hard    nproc           256000"  >> /etc/security/limits.conf
-echo "session     required      pam_limits.so” >> /etc/pam.d/login
+echo "session     required      pam_limits.so" >> /etc/pam.d/login
 chmod 0755 /etc/rc.d/rc.local
 sysctl -p
